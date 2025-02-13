@@ -1,0 +1,129 @@
+%this is latex 2e
+\documentclass[12pt,a4paper]{article}
+\usepackage{amsmath,amsthm,amssymb}
+\usepackage[mathscr]{eucal}
+\usepackage[T2A]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[russian]{babel}
+% \usepackage{wrapfig}
+% \RequirePackage[pdftex]{graphicx}
+% \usepackage{cells}
+
+% \usepackage{pgf,tikz,pgfplots}
+% \pgfplotsset{compat=1.9}
+% \usepackage{mathrsfs}
+% \usetikzlibrary{arrows}
+
+\oddsidemargin= -5,4mm
+\textwidth=170mm
+\headheight=0pt
+\headsep=0pt
+\topmargin=10,4mm
+\textheight=287mm
+
+
+\pagestyle{empty}
+
+\sloppy
+\righthyphenmin=2
+\exhyphenpenalty=10000
+
+\def\ds{\displaystyle}
+\def\ss{\scriptstyle}
+
+% \cellsize=1.3ex
+
+\def\q#1.{{\bf #1.}}
+\def\N{\mathbb N}
+\def\Z{\mathbb Z}
+\def\Q{\mathbb Q}
+\def\R{\mathbb R}
+\def\Pp{\mathbb P}
+\def\C{{\mathbb C}}
+\def\Cc{{\rm  C}}
+\def\eps{{\varepsilon}}
+\def\vec{\overrightarrow}
+\def\ov{\overline}
+\def\mmax{\mathop{\rm max}\limits}
+% \def\Сhar{{\rm char}}
+\def\sleg#1#2{\left(\frac{#1}{#2}\right)}
+\def\ord{\rm ord}
+\def\arc#1{\buildrel\,\,\smile\over{#1}}
+\DeclareRobustCommand{\No}{\ifmmode{\nfss@text{\textnumero}}\else\textnumero\fi}
+
+\def\amp{\mathbin\&}
+
+\DeclareMathOperator{\Ker}{Ker}
+\DeclareMathOperator{\Ima}{Im}
+\DeclareMathOperator{\Int}{Int}
+\DeclareMathOperator{\Cl}{Cl}
+
+\newtheorem*{utv}{Утверждение}
+\newtheorem*{thm}{Теорема}
+\newtheorem*{rem}{Замечание}
+\theoremstyle{definition}
+\newtheorem*{ddefin}{Определение}
+\newtheorem{defin}{Определение}
+
+\begin{document}
+
+% \small
+% \footnotesize
+
+% \renewcommand{\baselinestretch}{0.85}\selectfont
+% \setbox0=\vbox{\lines3
+%  _
+% |_|_ _
+% |_|_|_|
+% }
+
+\newser{{%
+\centerline{\bf Серия 7. }
+\medskip
+
+\q1. В королевстве живут рыцари. Любые два из них либо враждуют
+(и такие среди них есть!), либо дружат, либо друг к другу безразличны.
+Друг врага рыцаря — враг этого рыцаря. Докажите, что хотя бы у одного
+рыцаря врагов больше, чем друзей.
+
+\q2. Ребра полного графа $K_{100}$ раскрашены в синий и зеленый цвета.
+Для любых пяти городов оказалось, что среди всех ребер между ними не
+более четырех синих. Докажите, что во всем графе синих ребер меньше,
+чем зеленых.
+
+\q3. Пусть $G$ — связный граф, $W \subset V(G)$. Докажите, что два утверждения равносильны.
+
+1) Существует остовное дерево, в котором все вершины множества $W$
+являются висячими.
+
+2) Для любого множества вершин $U \subseteq W$ граф $G -U$ связен
+
+\q4. В регулярном графе $G$ степени $d$ нечетное число вершин. Докажите, что $\chi'(G) = d + 1$
+
+\q5.  Пусть $G$ — двудольный граф
+
+а) Докажите, что $G$ имеет регулярный двудольный надграф степени
+$\Delta(G)$ (добавлять можно как вершины, так и рёбра).
+
+б) Докажите, что $\chi'(G) = \Delta(G)$ (с помощью пункта а и теорем о паросочетаниях).
+
+
+\q6. Дан граф $G$ c $e(G) > nv(G)$, где $n \in \N$. Докажите, что этот граф
+не является $(n + 1)$-редуцируемым.
+
+\q7. Дан граф, степени всех вершин которого равны $4$. Его вершины
+покрашены в три цвета. Докажите, что есть цикл, вершины которого
+покрашены не более, чем в два цвета.
+
+\q8. На вечеринке гость считается застенчивым, если у него не более
+трех знакомых. Оказалось, что у каждого гостя не менее трех застенчивых знакомых. Докажите, что все гости — застенчивые.
+
+\q9. а) Докажите, что можно удалить не более $\frac{1}{k}$
+рёбер из графа так,
+чтобы получился граф хроматического числа не более $k$.
+
+б) Докажите, что любой граф $G$ имеет такой подграф $G'$ с $\chi(G') \leq k$,
+что для любой вершины $v$ выполнено $d_{G'}(v) \geq \frac{k-1}{k}d_{G}(v)$.
+
+
+\end{document}
